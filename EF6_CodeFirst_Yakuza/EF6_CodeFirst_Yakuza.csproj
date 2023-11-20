@@ -128,6 +128,10 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MembersController.cs" />
+    <Compile Include="Controllers\Principal_ClanController.cs" />
+    <Compile Include="Controllers\YakuzasController.cs" />
+    <Compile Include="Controllers\Yakuza_HierarchyController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -175,6 +179,26 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Members\Create.cshtml" />
+    <Content Include="Views\Members\Delete.cshtml" />
+    <Content Include="Views\Members\Details.cshtml" />
+    <Content Include="Views\Members\Edit.cshtml" />
+    <Content Include="Views\Members\Index.cshtml" />
+    <Content Include="Views\Principal_Clan\Create.cshtml" />
+    <Content Include="Views\Principal_Clan\Delete.cshtml" />
+    <Content Include="Views\Principal_Clan\Details.cshtml" />
+    <Content Include="Views\Principal_Clan\Edit.cshtml" />
+    <Content Include="Views\Principal_Clan\Index.cshtml" />
+    <Content Include="Views\Yakuzas\Create.cshtml" />
+    <Content Include="Views\Yakuzas\Delete.cshtml" />
+    <Content Include="Views\Yakuzas\Details.cshtml" />
+    <Content Include="Views\Yakuzas\Edit.cshtml" />
+    <Content Include="Views\Yakuzas\Index.cshtml" />
+    <Content Include="Views\Yakuza_Hierarchy\Create.cshtml" />
+    <Content Include="Views\Yakuza_Hierarchy\Delete.cshtml" />
+    <Content Include="Views\Yakuza_Hierarchy\Details.cshtml" />
+    <Content Include="Views\Yakuza_Hierarchy\Edit.cshtml" />
+    <Content Include="Views\Yakuza_Hierarchy\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

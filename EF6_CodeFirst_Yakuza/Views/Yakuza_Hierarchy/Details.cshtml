@@ -1,0 +1,58 @@
+﻿@model EF6_CodeFirst_Yakuza.Models.Yakuza_Hierarchy
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Yakuza_Hierarchy</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Parent_Yakuza_Hierarchy.EnglishEntryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Parent_Yakuza_Hierarchy.EnglishEntryName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Yakuza.Origin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Yakuza.Origin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LevelNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LevelNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EnglishEntryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EnglishEntryName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.JapaneseEntryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.JapaneseEntryName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.EntryId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

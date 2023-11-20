@@ -1,0 +1,74 @@
+﻿@model EF6_CodeFirst_Yakuza.Models.Principal_Clan
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Principal_Clan</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Yakuza.Origin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Yakuza.Origin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ClanName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ClanName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FoundingLocation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FoundingLocation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.YearFounded)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.YearFounded)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Territory)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Territory)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ethnicity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ethnicity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CriminalActivities)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CriminalActivities)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ClanNumber }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

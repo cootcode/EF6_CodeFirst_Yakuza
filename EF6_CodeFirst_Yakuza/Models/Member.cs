@@ -42,7 +42,7 @@ namespace EF6_CodeFirst_Yakuza.Models
         //NAVIGATIONAL PROPERTIES
         [ForeignKey("Principal_Clan")]
         public int ClanNumber { get; set; }
-        public Principal_Clan Princial_Clan { get; set; }
+        public Principal_Clan Principal_Clan { get; set; }
     }
 
     public enum Skill { Karate, Meditator, Singer, Musician, Chef, Bodyguard, Driver, Trainer}

@@ -1,0 +1,57 @@
+﻿@model IEnumerable<EF6_CodeFirst_Yakuza.Models.Yakuza_Hierarchy>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Parent_Yakuza_Hierarchy.EnglishEntryName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Yakuza.Origin)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LevelNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EnglishEntryName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.JapaneseEntryName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Parent_Yakuza_Hierarchy.EnglishEntryName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Yakuza.Origin)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LevelNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EnglishEntryName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.JapaneseEntryName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.EntryId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.EntryId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.EntryId })
+        </td>
+    </tr>
+}
+
+</table>

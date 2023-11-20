@@ -1,0 +1,69 @@
+﻿@model IEnumerable<EF6_CodeFirst_Yakuza.Models.Principal_Clan>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Yakuza.Origin)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ClanName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FoundingLocation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.YearFounded)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Territory)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ethnicity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CriminalActivities)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Yakuza.Origin)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ClanName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FoundingLocation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.YearFounded)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Territory)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ethnicity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CriminalActivities)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ClanNumber }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ClanNumber }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ClanNumber })
+        </td>
+    </tr>
+}
+
+</table>
